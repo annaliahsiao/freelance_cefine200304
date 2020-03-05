@@ -463,6 +463,11 @@ section {
   width: 50%;
   max-width: 532px;
 }
+#s3_info1 .line_box span,
+#s3_info2 .line_box span,
+#s3_info3 .line_box span {
+  text-shadow: 0 0 0.2rem #fff;
+}
 #s3_info1 {
   margin: 6% auto 3% auto;
 }
@@ -958,7 +963,6 @@ section {
   border-style: solid;
   border-width: 3px;
   border-image-source: linear-gradient(to top, #004a2e, #06b572);
-  border-image-slice: 1;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#0b8054), to(#37cd94)), -webkit-gradient(linear, left bottom, left top, from(#004a2e), to(#06b572));
   background-image: -o-linear-gradient(bottom, #0b8054, #37cd94), -o-linear-gradient(bottom, #004a2e, #06b572);
   background-image: linear-gradient(to top, #0b8054, #37cd94), linear-gradient(to top, #004a2e, #06b572);
@@ -967,7 +971,6 @@ section {
 }
 .s11_buy_buttons li:nth-of-type(1) a:hover {
   border-image-source: linear-gradient(to top, #0b8054, #37cd94);
-  border-image-slice: 1;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#004a2e), to(#06b572)), -webkit-gradient(linear, left bottom, left top, from(#0b8054), to(#37cd94));
   background-image: -o-linear-gradient(bottom, #004a2e, #06b572), -o-linear-gradient(bottom, #0b8054, #37cd94);
   background-image: linear-gradient(to top, #004a2e, #06b572), linear-gradient(to top, #0b8054, #37cd94);
@@ -978,7 +981,6 @@ section {
   border-style: solid;
   border-width: 3px;
   border-image-source: linear-gradient(to top, #004a2e, #06b572);
-  border-image-slice: 1;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#0b8054), to(#37cd94)), -webkit-gradient(linear, left bottom, left top, from(#004a2e), to(#06b572));
   background-image: -o-linear-gradient(bottom, #0b8054, #37cd94), -o-linear-gradient(bottom, #004a2e, #06b572);
   background-image: linear-gradient(to top, #0b8054, #37cd94), linear-gradient(to top, #004a2e, #06b572);
