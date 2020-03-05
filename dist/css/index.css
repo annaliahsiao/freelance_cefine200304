@@ -730,7 +730,9 @@ section {
   padding: 0% 10% 0% 1%;
   background-color: #231815;
   color: #fff;
-  font-style: italic;
+  -webkit-transform: skewX(-8deg);
+      -ms-transform: skewX(-8deg);
+          transform: skewX(-8deg);
   font-size: 1.2rem;
   padding-left: 1;
   font-family: serif;
