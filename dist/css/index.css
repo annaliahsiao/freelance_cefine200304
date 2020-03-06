@@ -1116,6 +1116,9 @@ section {
   .pc {
     display: none;
   }
+  #wrapper {
+    padding-bottom: 60px;
+  }
   section {
     width: 90%;
     text-align: left;
