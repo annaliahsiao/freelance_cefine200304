@@ -184,6 +184,7 @@ header {
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all;
+  background-color: #231815;
 }
 #menu.on {
   opacity: 1;
@@ -191,41 +192,71 @@ header {
       -ms-transform: translate(0, 0%);
           transform: translate(0, 0%);
 }
-#menu li {
+#menu #menu_content {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+}
+#menu #menu_logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+  background-position: center;
+  background-image: url(data:image/png;base64,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);
+}
+#menu #menu_logo:after {
+  display: block;
+  content: '';
+  padding-top: 43.52%;
+}
+#menu #menu_list {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  height: 100%;
+}
+#menu #menu_list li {
   display: inline-block;
   vertical-align: middle;
   position: relative;
   width: 25%;
   height: 100%;
-  background-color: #000;
   color: #fff;
   font-size: 1rem;
   text-align: center;
 }
-#menu li:hover {
+#menu #menu_list li:hover {
   background-color: #f63;
 }
-#menu li a {
+#menu #menu_list li:hover:before {
+  position: absolute;
+  content: '';
+  top: 3px;
+  right: 3px;
+  left: 3px;
+  bottom: 3px;
+  border: 3px solid #fff;
+  pointer-events: none;
+}
+#menu #menu_list li a {
   display: inline-block;
   width: calc(100% - 1px);
   height: 100%;
 }
-#menu li:before {
-  display: inline-block;
-  vertical-align: middle;
+#menu #menu_list li a:before {
   height: 100%;
-  content: '';
-  width: 0;
-}
-#menu li:after {
   display: inline-block;
   vertical-align: middle;
+  width: 0;
   content: '';
-  height: 30%;
-  width: 1px;
-  background-color: #fff;
 }
-#menu li:last-child:after {
+#menu #menu_list li:last-child {
+  background-color: #f63;
+}
+#menu #menu_list li:last-child:after {
   display: none;
 }
 #contect {
@@ -1109,6 +1140,20 @@ section {
   #menu {
     top: inherit;
     bottom: 0;
+  }
+  #menu #menu_logo {
+    display: none;
+  }
+  #menu #menu_list {
+    width: 100%;
+  }
+  #menu #menu_list li:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    height: 30%;
+    width: 1px;
+    background-color: #fff;
   }
   .m {
     display: block;
