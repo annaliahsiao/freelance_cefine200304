@@ -1332,8 +1332,14 @@ section {
   #s11 .title {
     width: 95%;
   }
+  #s11_pd #s11_sub {
+    max-width: 110px;
+  }
   #s12 .title {
     width: 95%;
+  }
+  #s12_list li i {
+    margin-right: 5%;
   }
 }
 
