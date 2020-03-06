@@ -794,6 +794,7 @@ section {
 #s11 {
   max-width: inherit;
   width: 100%;
+  padding-bottom: 0;
 }
 #s11 .title {
   margin-top: 0;
@@ -1011,6 +1012,10 @@ section {
   max-width: inherit;
   width: 100%;
   background-color: #fff;
+  padding-top: 5%;
+}
+#s12 .title {
+  margin-top: 0;
 }
 #s12_list {
   width: 90%;
