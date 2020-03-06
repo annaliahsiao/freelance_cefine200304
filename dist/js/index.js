@@ -31,7 +31,7 @@ window.enableScrolling = function () {
 };
 
 window.scrollToId = function (id, headerH) {
-  var h = headerH ? headerH : 0;
+  var h = headerH ? headerH : $('header').height() * 1.8;
   $body.stop().animate({
     scrollTop: $(id).offset().top - h
   }, 1000);
@@ -80,7 +80,20 @@ window.eraseCookie = function (name) {
   createCookie(name, "", -1);
 };
 
-$(function () {}); // 呼叫JS 兩種方法
+$(function () {
+  if ($(window).scrollTop() > $('header').height()) {
+    $('#menu').addClass('on');
+  } else {
+    $('#menu').removeClass('on');
+  }
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop() > $('header').height()) {
+    $('#menu').addClass('on');
+  } else {
+    $('#menu').removeClass('on');
+  }
+}); // 呼叫JS 兩種方法
 // 方法1.
 // function aa(){
 // 	console.log(212)
