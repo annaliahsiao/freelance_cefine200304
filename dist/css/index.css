@@ -176,7 +176,7 @@ header {
   width: 100%;
   height: 60px;
   font-size: 0;
-  z-index: 2;
+  z-index: 999;
   -webkit-transform: translate(0, 100%);
       -ms-transform: translate(0, 100%);
           transform: translate(0, 100%);
@@ -185,6 +185,7 @@ header {
   -o-transition: 0.5s all;
   transition: 0.5s all;
   background-color: #231815;
+  font-family: serif;
 }
 #menu.on {
   opacity: 1;
@@ -228,9 +229,6 @@ header {
   font-size: 1rem;
   text-align: center;
 }
-#menu #menu_list li:hover {
-  background-color: #f63;
-}
 #menu #menu_list li:hover:before {
   position: absolute;
   content: '';
@@ -252,6 +250,9 @@ header {
   vertical-align: middle;
   width: 0;
   content: '';
+}
+#menu #menu_list li:nth-of-type(3):after {
+  display: none;
 }
 #menu #menu_list li:last-child {
   background-color: #f63;
