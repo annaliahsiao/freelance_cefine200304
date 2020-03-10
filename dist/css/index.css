@@ -1273,10 +1273,10 @@ section {
   }
   #s10_list li:nth-of-type(1) .flex {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   #s10_list li:nth-of-type(2) .flex {
     -webkit-box-orient: vertical;
@@ -1284,6 +1284,11 @@ section {
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  #s10_list li:nth-of-type(2) .flex .col {
+    -webkit-transform: rotate(0) translate(0, 0);
+        -ms-transform: rotate(0) translate(0, 0);
+            transform: rotate(0) translate(0, 0);
   }
   #s10_list li:nth-of-type(3) .flex {
     -webkit-box-orient: vertical;
