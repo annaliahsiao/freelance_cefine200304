@@ -1271,12 +1271,19 @@ section {
             transform: translate(0);
     opacity: 0.5;
   }
-  #s10_list li:nth-of-type(1) .flex {
+  #s10_list li:nth-of-type(1) .flex:nth-of-type(1) {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #s10_list li:nth-of-type(1) .flex:nth-of-type(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   #s10_list li:nth-of-type(2) .flex {
     -webkit-box-orient: vertical;
