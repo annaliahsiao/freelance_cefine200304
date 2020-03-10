@@ -1281,6 +1281,11 @@ section {
   #s10_list li:nth-of-type(1) .flex:nth-of-type(3) {
     display: block;
   }
+  #s10_list li:nth-of-type(1) .flex:nth-of-type(3) img {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
   #s10_list li:nth-of-type(2) .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
