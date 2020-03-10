@@ -1278,7 +1278,7 @@ section {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  #s10_list li:nth-of-type(1) .flex:nth-of-type(3) {
+  #s10_list li:nth-of-type(1) .flex:nth-of-type(3v) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
