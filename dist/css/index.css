@@ -1056,6 +1056,7 @@ section {
   display: inline-block;
   position: relative;
   vertical-align: middle;
+  font-size: 2.3rem;
 }
 #s11_price h3 .del_word {
   position: relative;
@@ -1096,6 +1097,7 @@ section {
   right: 0;
   bottom: 0;
   color: #bf1a20;
+  line-height: 1;
 }
 #s11_price h1 span {
   color: #231815;
