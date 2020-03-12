@@ -1519,6 +1519,21 @@ section {
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
   }
+  #s11_buy_form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  #s11_buy_form .col {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+  }
   .s11_buy_buttons {
     width: 100%;
   }
@@ -1534,8 +1549,11 @@ section {
   #s11 .title {
     width: 95%;
   }
+  #s11_buy {
+    padding: 0;
+  }
   #s11_pd {
-    max-width: 130px;
+    max-width: inherit;
   }
   #s11_pd #s11_sub {
     max-width: 110px;
@@ -1543,23 +1561,53 @@ section {
         -ms-transform: translate(15%, 20%);
             transform: translate(15%, 20%);
   }
+  #s11_title {
+    font-size: 1.6rem;
+  }
   #s11_price h3 {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
   #s11_price h3 span {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
   #s11_price h3 span.red {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
   #s11_price h1 {
-    font-size: 2rem;
+    font-size: 4rem;
+    line-height: 1;
   }
   #s12 .title {
     width: 95%;
   }
   #s12_list li i {
     margin-right: 5%;
+  }
+}
+@media screen and (max-width: 359px) {
+  #s11_title {
+    font-size: 1.4rem;
+  }
+  #s11_pd #s11_sub {
+    max-width: 80px;
+  }
+  #s11_price h3 {
+    font-size: 1.6rem;
+  }
+  #s11_price h3 span.red {
+    font-size: 1.6rem;
+  }
+  #s11_price h1 {
+    font-size: 3.1rem;
+  }
+  #s12_list {
+    width: 80%;
+    -webkit-transform: translate(15%, 0);
+        -ms-transform: translate(15%, 0);
+            transform: translate(15%, 0);
+  }
+  #s12_list li i {
+    margin-left: -3rem;
   }
 }
 
