@@ -1044,34 +1044,52 @@ section {
   margin-bottom: 5%;
   margin-right: 2%;
   font-size: 0.8rem;
-}
-#s11_notes li:nth-of-type(1) {
-  color: #999;
-  background-color: #e0dfde;
-}
-#s11_notes li:nth-of-type(2),
-#s11_notes li:nth-of-type(3) {
   color: #fff;
   background-color: #231815;
   border-radius: 10px;
 }
 #s11_price {
   position: relative;
-  margin: 8% auto 15% auto;
+  margin: 0% auto 15% auto;
 }
 #s11_price h3 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
 }
-#s11_price h3 span {
+#s11_price h3 .del_word {
+  position: relative;
+}
+#s11_price h3 .del_word:before,
+#s11_price h3 .del_word:after {
+  content: '';
+  display: block;
   position: absolute;
-  top: 0;
+  bottom: 35%;
   left: 0;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  width: 100%;
+  height: 2px;
+  background-color: #bf1a20;
+}
+#s11_price h3 .del_word:before {
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+#s11_price h3 .del_word:after {
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+#s11_price h3 span {
   font-size: 1.3rem;
+  color: #231815;
+  opacity: 0.7;
+}
+#s11_price h3 span.red {
+  display: inline-block;
+  color: #bf1a20;
+  font-size: 2.4rem;
 }
 #s11_price h1 {
   position: absolute;
@@ -1352,17 +1370,30 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #s11_pd {
+    max-width: 240px;
+  }
   #s11_pd_slogan {
     text-align: center;
   }
   #s11_title {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   #s12_list {
     width: 75%;
   }
+  #s11_price h3 {
+    font-size: 1.3rem;
+  }
   #s11_price h3 span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  #s11_price h3 span.red {
+    font-size: 1.6rem;
+  }
+  #s11_price h1 {
+    font-size: 2.3rem;
+    line-height: 1.1;
   }
   #s12_note {
     width: 90%;
@@ -1486,21 +1517,6 @@ section {
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
   }
-  #s11_buy_form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: left;
-  }
-  #s11_buy_form .col {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 100%;
-  }
   .s11_buy_buttons {
     width: 100%;
   }
@@ -1516,11 +1532,26 @@ section {
   #s11 .title {
     width: 95%;
   }
+  #s11_pd {
+    max-width: 130px;
+  }
   #s11_pd #s11_sub {
     max-width: 110px;
-    -webkit-transform: translate(15%, 0);
-        -ms-transform: translate(15%, 0);
-            transform: translate(15%, 0);
+    -webkit-transform: translate(15%, 20%);
+        -ms-transform: translate(15%, 20%);
+            transform: translate(15%, 20%);
+  }
+  #s11_price h3 {
+    font-size: 1.1rem;
+  }
+  #s11_price h3 span {
+    font-size: 0.7rem;
+  }
+  #s11_price h3 span.red {
+    font-size: 1.3rem;
+  }
+  #s11_price h1 {
+    font-size: 2rem;
   }
   #s12 .title {
     width: 95%;
